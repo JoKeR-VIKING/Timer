@@ -1,0 +1,134 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #FFF;
+    user-select: none;
+}
+
+body
+{
+    height: 100vh;
+    background-color: #301934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer
+{
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-display
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.9);
+}
+
+.number-display
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number, .colon
+{
+    font-size: 3rem;
+}
+
+.changer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.increase, .decrease, .empty-button
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.labels
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    font-size: 1.5rem;
+}
+
+.controls
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.start-button, .pause-button, .stop-button
+{
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    background-color: #C354C7;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.pause-button, .stop-button
+{
+    background-color: dimgray;
+}
+
+.animated
+{
+    animation: changeNumber 1s infinite linear;
+}
+
+@keyframes changeNumber
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    50%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
