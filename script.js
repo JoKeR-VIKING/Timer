@@ -39,7 +39,7 @@ for (let button of decrease)
                 hour[0].textContent = ((parseInt(hour[0].textContent) + 9) % 10).toString();
                 break;
             case "d2":
-                hour[1].textContent = ((parseInt(hour[0].textContent) + 9) % 10).toString();
+                hour[1].textContent = ((parseInt(hour[1].textContent) + 9) % 10).toString();
                 break;
             case "d3":
                 minute[0].textContent = ((parseInt(minute[0].textContent) + 9) % 10).toString();
