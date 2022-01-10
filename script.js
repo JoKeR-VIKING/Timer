@@ -1,9 +1,6 @@
 let increase = document.getElementsByClassName("increase");
 let decrease = document.getElementsByClassName("decrease");
 
-console.log(increase.length);
-console.log(decrease.length);
-
 let hour = document.getElementsByClassName("hour");
 let minute = document.getElementsByClassName("minute");
 let second = document.getElementsByClassName("second");
@@ -78,10 +75,10 @@ document.getElementsByClassName("start-button")[0].addEventListener("click", fun
         totalTime--;
         
         if (totalTime <= 0) {
-            new Audio("alarm.wav").play();
+            let audio = new Audio("alarm.wav").play();
             setTimeout(function() {
                 audio.pause();
-            }, 3000);
+            }, 5000);
             
             clearInterval(startingInterval);
             document.getElementsByClassName("stop-button")[0].click();
