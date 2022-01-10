@@ -78,6 +78,7 @@ document.getElementsByClassName("start-button")[0].addEventListener("click", fun
         totalTime--;
         
         if (totalTime <= 0) {
+            new Audio("alarm.wav").play();
             clearInterval(startingInterval);
             document.getElementsByClassName("stop-button")[0].click();
             return;
