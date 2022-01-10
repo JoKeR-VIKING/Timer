@@ -13,7 +13,7 @@ for (let button of increase)
                 hour[0].textContent = ((parseInt(hour[0].textContent) + 1) % 10).toString();
                 break;
             case "i2":
-                hour[1].textContent = ((parseInt(hour[0].textContent) + 1) % 10).toString();
+                hour[1].textContent = ((parseInt(hour[1].textContent) + 1) % 10).toString();
                 break;
             case "i3":
                 minute[0].textContent = ((parseInt(minute[0].textContent) + 1) % 10).toString();
