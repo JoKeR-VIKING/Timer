@@ -81,7 +81,7 @@ document.getElementsByClassName("start-button")[0].addEventListener("click", fun
             new Audio("alarm.wav").play();
             setTimeout(function() {
                 audio.pause();
-            }, 5000);
+            }, 3000);
             
             clearInterval(startingInterval);
             document.getElementsByClassName("stop-button")[0].click();
